@@ -1,0 +1,538 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    height: 2000px;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+li {
+    list-style: none;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.container {
+    width: 1000px;
+    margin: auto;
+}
+.cyan {
+    color: cyan;
+}
+header {
+    width: 100%;
+    height: 50px;
+    padding: 20px 0;
+    transition: all 1s;
+    position: fixed;
+    z-index: 1;
+}
+header div {
+    height: 50px;
+}
+header h1 {
+    font-size: 18px;
+    line-height: 50px;
+    color: #fff;
+}
+header li {
+    float: left;
+    margin-left: 20px;
+}
+header li a {
+    line-height: 50px;
+    font-size: 14px;
+    transition: all 0.5s;
+
+}
+header li a:hover {
+    color: cyan;
+}
+#banner {
+    width: 100vw;
+    height: 100vh;
+}
+#banner div {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    background: #000;
+    overflow: hidden;
+}
+#banner div video {
+    width: 1800px;
+}
+#banner h2,
+#banner p
+{
+    text-align: center;
+    color: #fff;
+}
+#banner h2 {
+    font-size: 60px;
+    padding: 40vh 0 0 0;
+}
+#banner p {
+    font-size: 20px;
+    margin: 0 0 15vh 0;
+}
+.next {
+    display: block;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin: auto;
+    border: 2px solid rgba( 255, 255, 255, .5);
+}
+.next span {
+    display: block;
+    width: 70px;
+    height: 70px;
+    background: url("../img/next.png") center center no-repeat;
+    background-size: 25px 25px;
+}
+.next:hover {
+background: rgba( 255, 255, 255, .2);
+}
+.next:hover span {
+    animation: zoomIn 3s infinite linear;
+}
+@keyframes zoomIn {
+    0% {
+        background-size: 22px 22px;
+    }
+    50% {
+        background-size: 30px 30px;
+    }
+    100% {
+        background-size: 22px 22px;
+    }
+}
+#selfIntroduction {
+    width: 100vw;
+    height: 500px;
+    background: linear-gradient( to bottom, #6f7275, #31353a)
+}
+#selfIntroduction h2 {
+    text-align: center;
+    font-weight: normal;
+    color: #fff;
+    font-size: 30px;
+    padding: 50px 0;
+}
+.bold {
+    font-weight: bold;
+}
+#selfIntroduction .container div {
+    display: flex;
+    justify-content: space-around;
+}
+#selfIntroduction dl {
+    float: left;
+    width: 200px;
+}
+#selfIntroduction dt {
+    width: 120px;
+    height: 120px;
+    background: #474b4f center center no-repeat;
+    border-radius: 50%;
+    margin: auto;
+    background-size: 80px 80px;
+}
+#selfIntroduction dt:hover {
+    transition: .5s;
+    transform: scale(1.2);
+}
+#selfIntroduction dd > * {
+    text-align: center;
+}
+#selfIntroduction h3 {
+    padding: 1em 0;
+    color: cyan;
+}
+#selfIntroduction p {
+    font-size: 14px;
+    color: #aaa;
+}
+#selfIntroduction dl:nth-child(1) dt {
+    background-image: url("../img/grxx.png");
+}
+#selfIntroduction dl:nth-child(2) dt {
+    background-image: url("../img/xl.png");
+}
+#selfIntroduction dl:nth-child(3) dt {
+    background-image: url("../img/xx.png");
+}
+#selfIntroduction dl:nth-child(4) dt {
+    background-image: url("../img/lx.png");
+}
+#selfIntroduction dl:nth-child(1) dt:hover {
+    background-image: url("../img/grxx_hover.png");
+}
+#selfIntroduction dl:nth-child(2) dt:hover {
+    background-image: url("../img/xl_hover.png");
+}
+#selfIntroduction dl:nth-child(3) dt:hover {
+    background-image: url("../img/xx_hover.png");
+}
+#selfIntroduction dl:nth-child(4) dt:hover {
+    background-image: url("../img/lx_hover.png");
+}
+#professionalSkill {
+    height: 100vh;
+    background: linear-gradient(to bottom, #ffffff, #cccccc);
+}
+#professionalSkill h2 {
+    text-align: center;
+    font-weight: normal;
+    color: #333;
+    font-size: 30px;
+    padding: 50px 0;
+}
+#professionalSkill ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 0 20px 0;
+}
+#professionalSkill li > div {
+    width: 130px;
+    height: 130px;
+    background: center center no-repeat;
+    background-size: auto 130px;
+    position: relative;
+}
+#professionalSkill li h3 {
+    padding: 10px 0 0 0;
+    text-align: center;
+}
+#professionalSkill .ul-top li:nth-child(1) >div {
+    background-image: url("../img/html5.svg");
+}
+#professionalSkill .ul-top li:nth-child(2) >div {
+    background-image: url("../img/css3.svg");
+}
+#professionalSkill .ul-top li:nth-child(3) >div {
+    background-image: url("../img/javascript.svg");
+}
+#professionalSkill .ul-top li:nth-child(4) >div {
+    background-image: url("../img/jquery.svg");
+    background-size: 130px;
+}
+#professionalSkill .ul-center li:nth-child(1) >div {
+    background-image: url("../img/mysql.svg");
+}
+#professionalSkill .ul-center li:nth-child(2) >div {
+    background-image: url("../img/php.svg");
+    background-size: 130px;
+}
+#professionalSkill .ul-center li:nth-child(3) >div {
+    background-image: url("../img/bootstrap.svg");
+}
+#professionalSkill .ul-center li:nth-child(4) >div {
+    background-image: url("../img/laravel.svg");
+}
+#professionalSkill .ul-bottom li:nth-child(1) >div {
+    background-image: url("../img/nodejs.svg");
+    background-size: 130px;
+}
+#professionalSkill .ul-bottom li:nth-child(2) >div {
+    background-image: url("../img/webpack.svg");
+}
+#professionalSkill .ul-bottom li:nth-child(3) >div {
+    background-image: url("../img/vue.svg");
+    background-size: 130px;
+}
+#professionalSkill .ul-bottom li:nth-child(4) >div {
+    background-image: url("../img/react.svg");
+}
+#professionalSkill li > div {
+    position: relative;
+}
+#professionalSkill li > div > div {
+    height: 104px;
+    width: 100%;
+    position: absolute;
+    bottom: 0
+}
+#professionalSkill .ul-top li:nth-child(4) > div > div {
+    height: 78px;
+}
+#professionalSkill .ul-top li:nth-child(2) li > div > div {
+    height: 117px;
+}
+#professionalSkill .ul-center li:nth-child(1) > div > div {
+    height: 78px;
+}
+#professionalSkill .ul-center li:nth-child(3) li > div > div {
+    height: 117px;
+}
+#professionalSkill .ul-bottom li:nth-child(2) li > div > div {
+    height: 97px;
+}
+#professionalSkill li > div > div > div {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    animation: up 1s;
+    bottom: 0;
+    display: none;
+}
+#professionalSkill li > div > div > div > p {
+    width: 100%;
+    position: absolute;
+    color: cyan;
+    text-align: center;
+    top: -1.5em;
+    z-index: 2;
+}
+#professionalSkill li > div > div > div > div {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0
+}
+#professionalSkill li > div > div > div > div > img {
+    height: 130px;
+    filter: grayscale(70%);;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+#professionalSkill .ul-top li:nth-child(4) > div > div > div > div > img,
+#professionalSkill .ul-center li:nth-child(2) > div > div > div > div > img,
+#professionalSkill .ul-bottom li:nth-child(1) > div > div > div > div > img
+{
+    width: 130px;
+}
+#professionalSkill .ul-center li:nth-child(2) > div > div > div > div >img{
+    height: 100px;
+}
+#professionalSkill .ul-bottom li:nth-child(3) > div > div > div > div >img{
+    width: 140px;
+}
+#professionalSkill li:hover > div > div > div {
+    display: block;
+}
+#professionalSkill li:hover > div {
+    transform: scale(1.2);
+    transition: 1s;
+}
+@keyframes up {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100%;
+    }
+}
+#jobSearchDirection {
+    width: 100vw;
+    height: 500px;
+    background: url("../img/bg1.jpg");
+    background-attachment: fixed;
+    background-size: 100vw;
+}
+#jobSearchDirection h2 {
+    text-align: center;
+    padding: 50px 0;
+    font-size: 30px;
+    font-weight: normal;
+}
+#jobSearchDirection dl {
+    width: 300px;
+}
+#jobSearchDirection .container > div {
+    display: flex;
+    justify-content: center;
+}
+#jobSearchDirection dt {
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    background-size: 120px 120px;
+}
+#jobSearchDirection dt:hover {
+    transition: .5s;
+    transform: scale(1.2);
+}
+#jobSearchDirection dd > * {
+    text-align: center;
+}
+#jobSearchDirection h3 {
+    padding: 1em 0;
+}
+#jobSearchDirection p {
+    font-size: 14px;
+    color: #6f7275;
+}
+#jobSearchDirection dl:nth-child(1) dt {
+    background-image: url("../img/wyzz.png");
+}
+#jobSearchDirection dl:nth-child(2) dt {
+    background-image: url("../img/qdgn.png");
+}
+#jobSearchDirection dl:nth-child(3) dt {
+    background-image: url("../img/h5ym.png");
+}
+#selfEvaluation {
+    width: 100vw;
+    height: 500px;
+    background: linear-gradient( to bottom, #6f7275, #31353a)
+}
+#selfEvaluation h2 {
+    text-align: center;
+    padding: 50px 0;
+    font-size: 30px;
+    font-weight: normal;
+    color: #fff;
+}
+#selfEvaluation p {
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+    font-weight: normal;
+    text-shadow: 2px 2px 5px gray;
+}
+#contactDetails {
+    width: 100vw;
+    height: 100vh;
+    background: url("../img/bg2.jpg");
+    background-size: 100vw;
+    background-attachment: fixed;
+}
+#contactDetails h2 {
+    text-align: center;
+    padding: 50px 0;
+    font-size: 30px;
+    font-weight: normal;
+}
+#contactDetails .container{
+    width: 800px;
+}
+#contactDetails .container > div {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+}
+#contactDetails dl {
+    width: 300px;
+}
+#contactDetails dt {
+    width: 100px;
+    height: 100px;
+    background: center center no-repeat;
+    background-size: 50px;
+    margin: auto;
+}
+#contactDetails dl:nth-child(1) dt {
+    background-image: url("../img/dz.png");
+
+}
+#contactDetails dl:nth-child(2) dt {
+    background-image: url("../img/yj.png");
+}
+#contactDetails dl:nth-child(3) dt {
+    background-image: url("../img/dh.png");
+}
+#contactDetails dd {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+#contactDetails h3{
+    text-align: center;
+    padding: 40px 0;
+    font-size: 25px;
+    font-weight: normal;
+    color: #555;
+}
+#contactDetails form > div {
+    margin: 0 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+#contactDetails form > div input {
+    width: 360px;
+    height: 30px;
+    font-size: 20px;
+    padding: 5px 15px;
+    border: 0;
+    box-shadow: 1px 1px 5px gray;
+}
+#contactDetails form textarea {
+    width: 770px;
+    height: 200px;
+    font-size: 20px;
+    padding: 5px 15px;
+    box-shadow: 1px 1px 5px gray;
+    border: 0;
+}
+#contactDetails form > input {
+    margin: auto;
+    display: block;
+    box-shadow: 1px 1px 5px gray;
+}
+footer {
+    width: 100vw;
+    height: 50px;
+    background: #222222;
+    color: #fff;
+}
+footer .container {
+    width: 1000px;
+}
+footer ul {
+    width: 120px;
+    height: 50px;
+}
+footer li {
+    width: 20px;
+    height: 20px;
+    margin: 15px 0 0 10px;
+    float: left;
+    background-size: 20px;
+    transition: 1s;
+}
+footer li:nth-child(1) {
+    background-image: url("../img/wb.png");
+}
+footer li:nth-child(2) {
+    background-image: url("../img/QQ.png");
+}
+footer li:nth-child(3) {
+    background-image: url("../img/kj.png");
+}
+footer li:nth-child(4) {
+    background-image: url("../img/github.png");
+}
+footer li:nth-child(1):hover {
+    background-image: url("../img/wb_hover.png");
+}
+footer li:nth-child(2):hover {
+    background-image: url("../img/QQ_hover.png");
+}
+footer li:nth-child(3):hover {
+    background-image: url("../img/kj_hover.png");
+}
+footer li:nth-child(4):hover {
+    background-image: url("../img/github_hover.png");
+}
+footer p {
+    font-size: 10px;
+    line-height: 50px;
+}
