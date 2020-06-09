@@ -72,7 +72,7 @@ header li a:hover {
     overflow: hidden;
 }
 #banner div video {
-    width: 1800px;
+    height: 100vh;
 }
 #banner h2,
 #banner p
@@ -150,9 +150,9 @@ background: rgba( 255, 255, 255, .2);
     border-radius: 50%;
     margin: auto;
     background-size: 80px 80px;
+    transition: .5s;
 }
 #selfIntroduction dt:hover {
-    transition: .5s;
     transform: scale(1.2);
 }
 #selfIntroduction dd > * {
@@ -212,6 +212,7 @@ background: rgba( 255, 255, 255, .2);
     background: center center no-repeat;
     background-size: auto 130px;
     position: relative;
+    transition: 1s;
 }
 #professionalSkill li h3 {
     padding: 10px 0 0 0;
@@ -304,7 +305,7 @@ background: rgba( 255, 255, 255, .2);
     display: flex;
     justify-content: center;
     position: absolute;
-    bottom: 0
+    bottom: 0;
 }
 #professionalSkill li > div > div > div > div > img {
     height: 130px;
@@ -330,7 +331,6 @@ background: rgba( 255, 255, 255, .2);
 }
 #professionalSkill li:hover > div {
     transform: scale(1.2);
-    transition: 1s;
 }
 @keyframes up {
     0% {
@@ -365,9 +365,9 @@ background: rgba( 255, 255, 255, .2);
     height: 120px;
     margin: auto;
     background-size: 120px 120px;
+    transition: .5s;
 }
 #jobSearchDirection dt:hover {
-    transition: .5s;
     transform: scale(1.2);
 }
 #jobSearchDirection dd > * {
@@ -469,14 +469,14 @@ background: rgba( 255, 255, 255, .2);
 #contactDetails form > div input {
     width: 360px;
     height: 30px;
-    font-size: 20px;
-    padding: 5px 15px;
-    border: 0;
-    box-shadow: 1px 1px 5px gray;
 }
 #contactDetails form textarea {
     width: 770px;
     height: 200px;
+}
+#contactDetails form textarea,
+#contactDetails form > div input,
+#contactDetails .btn-submit {
     font-size: 20px;
     padding: 5px 15px;
     box-shadow: 1px 1px 5px gray;
@@ -486,6 +486,15 @@ background: rgba( 255, 255, 255, .2);
     margin: auto;
     display: block;
     box-shadow: 1px 1px 5px gray;
+}
+#contactDetails .btn-submit {
+    margin-top: 18px;
+    width: 100px;
+    height: 40px;
+    padding: 0;
+    background: #fff;
+    font-size: 1.2em;
+    color: gray;
 }
 footer {
     width: 100vw;
